@@ -13,7 +13,7 @@ class rankViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = COLOR_RED
     }
 
     override func didReceiveMemoryWarning() {

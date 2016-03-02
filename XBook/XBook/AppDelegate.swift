@@ -28,10 +28,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabbarController.viewControllers = [rankController, searchController, pushController, circleController, moreController]
         
-        let tabbarItem1 = UITabBarItem(title: "排行榜", image: UIImage(named: "rank_tab")), selectedImage: UIImage(named: "rank_tab_select"))
+        let tabbarItem1 = UITabBarItem(title: "排行榜", image: UIImage(named: "rank_tab"), selectedImage: UIImage(named: "rank_tab_select"))
+        let tabbarItem2 = UITabBarItem(title: "发现", image: UIImage(named: "search_tab"), selectedImage: UIImage(named: "search_tab_select"))
+        let tabbarItem3 = UITabBarItem(title: "push", image: UIImage(named: "push_tab"), selectedImage: UIImage(named: "push_tab_select"))
+        let tabbarItem4 = UITabBarItem(title: "圈子", image: UIImage(named: "circle_tab"), selectedImage: UIImage(named: "circle_tab_select"))
+        let tabbarItem5 = UITabBarItem(title: "更多", image: UIImage(named: "more_tab"), selectedImage: UIImage(named: "more_tab_select"))
         
+        rankController.tabBarItem = tabbarItem1
+        searchController.tabBarItem = tabbarItem2
+        pushController.tabBarItem = tabbarItem3
+        circleController.tabBarItem = tabbarItem4
+        moreController.tabBarItem = tabbarItem5
         
+        rankController.tabBarController?.tabBar.tintColor = COLOR_RED
         
+        self.window?.rootViewController = tabbarController
+        self.window?.makeKeyAndVisible()
         
         return true
     }

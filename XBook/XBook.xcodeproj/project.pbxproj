@@ -101,10 +101,6 @@
 		F437910A1C85F1FA005DFD14 = {
 			isa = PBXGroup;
 			children = (
-				F437914F1C85F44E005DFD14 /* CoreLocation.framework */,
-				F437914D1C85F446005DFD14 /* CoreTelephony.framework */,
-				F437914B1C85F43D005DFD14 /* MobileCoreServices.framework */,
-				F43791491C85F435005DFD14 /* SystemConfiguration.framework */,
 				F43791441C85F31D005DFD14 /* frameWork */,
 				F43791151C85F1FA005DFD14 /* XBook */,
 				F437912A1C85F1FA005DFD14 /* XBookTests */,
@@ -162,6 +158,10 @@
 		F43791441C85F31D005DFD14 /* frameWork */ = {
 			isa = PBXGroup;
 			children = (
+				F437914F1C85F44E005DFD14 /* CoreLocation.framework */,
+				F437914D1C85F446005DFD14 /* CoreTelephony.framework */,
+				F437914B1C85F43D005DFD14 /* MobileCoreServices.framework */,
+				F43791491C85F435005DFD14 /* SystemConfiguration.framework */,
 				F43791451C85F371005DFD14 /* release-v3.2.6 */,
 			);
 			name = frameWork;
@@ -498,7 +498,7 @@
 					"$(PROJECT_DIR)/release-v3.2.6/Static",
 				);
 				INFOPLIST_FILE = XBook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -522,7 +522,7 @@
 					"$(PROJECT_DIR)/release-v3.2.6/Static",
 				);
 				INFOPLIST_FILE = XBook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
@@ -604,6 +604,7 @@
 				F437913D1C85F1FA005DFD14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F437913E1C85F1FA005DFD14 /* Build configuration list for PBXNativeTarget "XBookTests" */ = {
 			isa = XCConfigurationList;
@@ -612,6 +613,7 @@
 				F43791401C85F1FA005DFD14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F43791411C85F1FA005DFD14 /* Build configuration list for PBXNativeTarget "XBookUITests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +622,7 @@
 				F43791431C85F1FA005DFD14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
