@@ -9,12 +9,6 @@
 import UIKit
 
 class searchViewController: UIViewController {
-
-    override func viewDidDisappear(animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        printLog("33333")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
