@@ -23,6 +23,7 @@
 		F437915E1C85F6F6005DFD14 /* pushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437915D1C85F6F6005DFD14 /* pushViewController.swift */; };
 		F43791601C85F701005DFD14 /* circleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437915F1C85F701005DFD14 /* circleViewController.swift */; };
 		F43791621C85F70B005DFD14 /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43791611C85F70B005DFD14 /* moreViewController.swift */; };
+		F43791661C8874D9005DFD14 /* 经典隶书变体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F43791651C8874D8005DFD14 /* 经典隶书变体.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		F437915D1C85F6F6005DFD14 /* pushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pushViewController.swift; sourceTree = "<group>"; };
 		F437915F1C85F701005DFD14 /* circleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleViewController.swift; sourceTree = "<group>"; };
 		F43791611C85F70B005DFD14 /* moreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
+		F43791651C8874D8005DFD14 /* 经典隶书变体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "经典隶书变体.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		F43791151C85F1FA005DFD14 /* XBook */ = {
 			isa = PBXGroup;
 			children = (
+				F43791641C8874C7005DFD14 /* resource */,
 				F43791581C85F6C7005DFD14 /* more */,
 				F43791571C85F6BB005DFD14 /* circle */,
 				F43791561C85F6B3005DFD14 /* push */,
@@ -221,6 +224,14 @@
 				F43791611C85F70B005DFD14 /* moreViewController.swift */,
 			);
 			name = more;
+			sourceTree = "<group>";
+		};
+		F43791641C8874C7005DFD14 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				F43791651C8874D8005DFD14 /* 经典隶书变体.ttf */,
+			);
+			name = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F43791211C85F1FA005DFD14 /* LaunchScreen.storyboard in Resources */,
+				F43791661C8874D9005DFD14 /* 经典隶书变体.ttf in Resources */,
 				F437911E1C85F1FA005DFD14 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

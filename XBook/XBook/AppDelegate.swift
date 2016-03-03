@@ -45,8 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = tabbarController
         self.window?.makeKeyAndVisible()
         
-        printLog("33333")
-        
         return true
     }
 

@@ -14,6 +14,16 @@ class rankViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = COLOR_RED
+        
+        let label = UILabel(frame: CGRectMake(0, 0, 100, 20))
+        label.text = "哈哈隶书变体"
+        label.font = XXYFont(20)
+        label.center = self.view.center
+        label.adjustsFontSizeToFitWidth = true
+        label.tintColor = UIColor.blackColor()
+        
+        self.view.addSubview(label)
+        
     }
 
     override func didReceiveMemoryWarning() {
