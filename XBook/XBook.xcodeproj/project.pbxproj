@@ -24,6 +24,8 @@
 		F43791601C85F701005DFD14 /* circleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F437915F1C85F701005DFD14 /* circleViewController.swift */; };
 		F43791621C85F70B005DFD14 /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43791611C85F70B005DFD14 /* moreViewController.swift */; };
 		F43791661C8874D9005DFD14 /* 经典隶书变体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F43791651C8874D8005DFD14 /* 经典隶书变体.ttf */; };
+		F44B5FAF1C88869500B810BD /* pushNewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B5FAE1C88869500B810BD /* pushNewBookViewController.swift */; };
+		F44B5FB21C8888AC00B810BD /* GeneralFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B5FB11C8888AC00B810BD /* GeneralFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		F437915F1C85F701005DFD14 /* circleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleViewController.swift; sourceTree = "<group>"; };
 		F43791611C85F70B005DFD14 /* moreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
 		F43791651C8874D8005DFD14 /* 经典隶书变体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "经典隶书变体.ttf"; sourceTree = "<group>"; };
+		F44B5FAE1C88869500B810BD /* pushNewBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pushNewBookViewController.swift; sourceTree = "<group>"; };
+		F44B5FB11C8888AC00B810BD /* GeneralFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 		F43791151C85F1FA005DFD14 /* XBook */ = {
 			isa = PBXGroup;
 			children = (
+				F44B5FB01C88873C00B810BD /* Factory */,
+				F44B5FAA1C88866200B810BD /* pushNewBook */,
 				F43791641C8874C7005DFD14 /* resource */,
 				F43791581C85F6C7005DFD14 /* more */,
 				F43791571C85F6BB005DFD14 /* circle */,
@@ -205,7 +211,9 @@
 		F43791561C85F6B3005DFD14 /* push */ = {
 			isa = PBXGroup;
 			children = (
-				F437915D1C85F6F6005DFD14 /* pushViewController.swift */,
+				F43791691C887939005DFD14 /* Controller */,
+				F43791681C887932005DFD14 /* View */,
+				F43791671C887929005DFD14 /* Model */,
 			);
 			name = push;
 			sourceTree = "<group>";
@@ -232,6 +240,68 @@
 				F43791651C8874D8005DFD14 /* 经典隶书变体.ttf */,
 			);
 			name = resource;
+			sourceTree = "<group>";
+		};
+		F43791671C887929005DFD14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F43791681C887932005DFD14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F43791691C887939005DFD14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F437915D1C85F6F6005DFD14 /* pushViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F44B5FAA1C88866200B810BD /* pushNewBook */ = {
+			isa = PBXGroup;
+			children = (
+				F44B5FAD1C88867D00B810BD /* Controller */,
+				F44B5FAC1C88867500B810BD /* View */,
+				F44B5FAB1C88866F00B810BD /* Model */,
+			);
+			name = pushNewBook;
+			sourceTree = "<group>";
+		};
+		F44B5FAB1C88866F00B810BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F44B5FAC1C88867500B810BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F44B5FAD1C88867D00B810BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F44B5FAE1C88869500B810BD /* pushNewBookViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F44B5FB01C88873C00B810BD /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				F44B5FB11C8888AC00B810BD /* GeneralFactory.swift */,
+			);
+			name = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,12 +435,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44B5FB21C8888AC00B810BD /* GeneralFactory.swift in Sources */,
 				F43791171C85F1FA005DFD14 /* AppDelegate.swift in Sources */,
 				F437915E1C85F6F6005DFD14 /* pushViewController.swift in Sources */,
 				F43791621C85F70B005DFD14 /* moreViewController.swift in Sources */,
 				F437915A1C85F6DF005DFD14 /* rankViewController.swift in Sources */,
 				F437915C1C85F6EC005DFD14 /* searchViewController.swift in Sources */,
 				F43791601C85F701005DFD14 /* circleViewController.swift in Sources */,
+				F44B5FAF1C88869500B810BD /* pushNewBookViewController.swift in Sources */,
 				F43791531C85F557005DFD14 /* config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

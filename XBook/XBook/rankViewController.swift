@@ -12,7 +12,6 @@ class rankViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.view.backgroundColor = COLOR_RED
         
         let label = UILabel(frame: CGRectMake(0, 0, 100, 20))
@@ -23,7 +22,6 @@ class rankViewController: UIViewController {
         label.tintColor = UIColor.blackColor()
         
         self.view.addSubview(label)
-        
     }
 
     override func didReceiveMemoryWarning() {
