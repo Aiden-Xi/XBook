@@ -24,6 +24,7 @@
 		95A670D61C898C1500C3803B /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A670C91C898C1500C3803B /* page3.png */; };
 		95A670D71C898C1500C3803B /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A670CA1C898C1500C3803B /* page4.png */; };
 		95A670D81C898C1500C3803B /* red_point.png in Resources */ = {isa = PBXBuildFile; fileRef = 95A670CB1C898C1500C3803B /* red_point.png */; };
+		95A670DA1C89973900C3803B /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A670D91C89973900C3803B /* PhotoPickerViewController.swift */; };
 		F43791171C85F1FA005DFD14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43791161C85F1FA005DFD14 /* AppDelegate.swift */; };
 		F437911E1C85F1FA005DFD14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F437911D1C85F1FA005DFD14 /* Assets.xcassets */; };
 		F43791211C85F1FA005DFD14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F437911F1C85F1FA005DFD14 /* LaunchScreen.storyboard */; };
@@ -83,6 +84,7 @@
 		95A670C91C898C1500C3803B /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
 		95A670CA1C898C1500C3803B /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
 		95A670CB1C898C1500C3803B /* red_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_point.png; sourceTree = "<group>"; };
+		95A670D91C89973900C3803B /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		F43791131C85F1FA005DFD14 /* XBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43791161C85F1FA005DFD14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F437911D1C85F1FA005DFD14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				F437915D1C85F6F6005DFD14 /* pushViewController.swift */,
+				95A670D91C89973900C3803B /* PhotoPickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				F437915E1C85F6F6005DFD14 /* pushViewController.swift in Sources */,
 				95A670BD1C898BEB00C3803B /* NSString+TextDirectionality.m in Sources */,
 				F43791621C85F70B005DFD14 /* moreViewController.swift in Sources */,
+				95A670DA1C89973900C3803B /* PhotoPickerViewController.swift in Sources */,
 				95A670BC1C898BEB00C3803B /* JVFloatLabeledTextView.m in Sources */,
 				F437915A1C85F6DF005DFD14 /* rankViewController.swift in Sources */,
 				F437915C1C85F6EC005DFD14 /* searchViewController.swift in Sources */,

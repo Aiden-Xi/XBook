@@ -29,6 +29,12 @@ class pushNewBookViewController: UIViewController, BookTitleDelegate {
     
     func choiceCover() {
         printLog("choiceCover")
+        
+        let vc = PhotoPickerViewController()
+        
+        self.presentViewController(vc, animated: true) { () -> Void in
+            
+        }
     }
     
     func close() {
