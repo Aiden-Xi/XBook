@@ -25,9 +25,12 @@ class GeneralFactory: NSObject {
         btn2.titleLabel?.font = XXYFont(14)
         target.view.addSubview(btn2)
         
-        btn1.addTarget(target, action: Selector("close"), forControlEvents: .TouchUpInside)
-        btn2.addTarget(target, action: Selector("sure"), forControlEvents: .TouchUpInside)
+        if target.respondsToSelector(Selector("close")) {
+            btn1.addTarget(target, action: Selector("close"), forControlEvents: .TouchUpInside)
+        }
         
+        if target.respondsToSelector(Selector("sure")) {
+            btn2.addTarget(target, action: Selector("sure"), forControlEvents: .TouchUpInside)
+        }
     }
-    
 }

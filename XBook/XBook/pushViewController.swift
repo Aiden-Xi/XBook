@@ -31,7 +31,7 @@ class pushViewController: UIViewController {
         
         // 在navigationView上面添加按钮，设置成为BarBtn
         let addBookBtn = UIButton(frame: CGRectMake(20, 20, SCREEN_WIDTH, 45))
-        addBookBtn.setImage(UIImage(named: "more_tab"), forState: .Normal)
+        addBookBtn.setImage(UIImage(named: "plus circle"), forState: .Normal)
         addBookBtn.setTitleColor(COLOR_BLACK, forState: .Normal)
         addBookBtn.setTitle("   新建书评", forState: .Normal)
         addBookBtn.titleLabel?.font = XXYFont(16)
