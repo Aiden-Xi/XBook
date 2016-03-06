@@ -12,7 +12,7 @@ class pushViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = COLOR_WHITE
+        self.view.backgroundColor = kColorWhite
 
         self.setNavigationBar()
     }
@@ -26,13 +26,13 @@ class pushViewController: UIViewController {
     func setNavigationBar() {
         // 添加一个navigationView
         let navigationView = UIView(frame: CGRectMake(0, -20, SCREEN_WIDTH, 65))
-        navigationView.backgroundColor = COLOR_WHITE
+        navigationView.backgroundColor = kColorWhite
         self.navigationController?.navigationBar.addSubview(navigationView)
         
         // 在navigationView上面添加按钮，设置成为BarBtn
         let addBookBtn = UIButton(frame: CGRectMake(20, 20, SCREEN_WIDTH, 45))
         addBookBtn.setImage(UIImage(named: "plus circle"), forState: .Normal)
-        addBookBtn.setTitleColor(COLOR_BLACK, forState: .Normal)
+        addBookBtn.setTitleColor(kColorBlack, forState: .Normal)
         addBookBtn.setTitle("   新建书评", forState: .Normal)
         addBookBtn.titleLabel?.font = XXYFont(16)
         addBookBtn.contentHorizontalAlignment = .Left  // 按钮文字显示在左边

@@ -12,7 +12,7 @@ class rankViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = COLOR_RED
+        self.view.backgroundColor = kColorRed
         
         let label = UILabel(frame: CGRectMake(0, 0, 100, 20))
         label.text = "哈哈隶书变体"

@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         circleController.tabBarItem = tabbarItem4
         moreController.tabBarItem = tabbarItem5
         
-        rankController.tabBarController?.tabBar.tintColor = COLOR_RED
+        rankController.tabBarController?.tabBar.tintColor = kColorRed
         
         self.window?.rootViewController = tabbarController
         self.window?.makeKeyAndVisible()

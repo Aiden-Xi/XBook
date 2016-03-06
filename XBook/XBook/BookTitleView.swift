@@ -35,11 +35,11 @@ class BookTitleView: UIView {
         self.BookNmae?.placeholder = "书名"
         self.BookEditor?.placeholder = "作者"
         
-        self.BookNmae?.floatingLabelFont = XXYFont(14)
-        self.BookEditor?.floatingLabelFont = XXYFont(14)
+        self.BookNmae?.floatingLabelFont = XXYFont(16)
+        self.BookEditor?.floatingLabelFont = XXYFont(16)
         
-        self.BookNmae?.font = XXYFont(14)
-        self.BookEditor?.font = XXYFont(14)
+        self.BookNmae?.font = XXYFont(16)
+        self.BookEditor?.font = XXYFont(16)
         
         self.addSubview(self.BookNmae!)
         self.addSubview(self.BookEditor!)

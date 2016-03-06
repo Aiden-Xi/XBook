@@ -8,14 +8,14 @@
 
 import UIKit
 
-class pushNewBookViewController: UIViewController, BookTitleDelegate {
+class pushNewBookViewController: UIViewController, BookTitleDelegate, PhotoPickerDelegate {
 
     var BookTitle:BookTitleView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = COLOR_WHITE
+        self.view.backgroundColor = kColorWhite
         
         self.BookTitle = BookTitleView(frame: CGRectMake(0, 40, SCREEN_WIDTH, 160))
         self.BookTitle?.delegate = self
@@ -27,16 +27,22 @@ class pushNewBookViewController: UIViewController, BookTitleDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func choiceCover() {
-        printLog("choiceCover")
-        
+    func choiceCover() {        
         let vc = PhotoPickerViewController()
+        vc.delegate = self
         
         self.presentViewController(vc, animated: true) { () -> Void in
             
         }
     }
     
+    /**
+     PhotoPickerDelegate
+     */
+    func getImageFromPicker(image: UIImage) {
+        self.BookTitle?.BookCover?.setImage(image, forState: .Normal)
+    }
+        
     func close() {
         self.dismissViewControllerAnimated(true) { () -> Void in
             

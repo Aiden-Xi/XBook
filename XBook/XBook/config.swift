@@ -12,9 +12,10 @@ let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 
 let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
 
-let COLOR_RED = UIColor(colorLiteralRed: 235/255, green: 114/255, blue: 118/255, alpha: 1)
-let COLOR_WHITE = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 1)
-let COLOR_BLACK = UIColor(colorLiteralRed: 0/255, green: 0/255, blue: 0/255, alpha: 1)
+let kColorRed = UIColor(colorLiteralRed: 235/255, green: 114/255, blue: 118/255, alpha: 1)
+let kColorWhite = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+let kColorBlack = UIColor(colorLiteralRed: 0/255, green: 0/255, blue: 0/255, alpha: 1)
+let kColorClear = UIColor.clearColor()
 
 let My_Font = "Bauhaus ITC"
 

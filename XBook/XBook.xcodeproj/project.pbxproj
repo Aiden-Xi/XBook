@@ -351,7 +351,6 @@
 			isa = PBXGroup;
 			children = (
 				F437915D1C85F6F6005DFD14 /* pushViewController.swift */,
-				95A670D91C89973900C3803B /* PhotoPickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -384,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				F44B5FAE1C88869500B810BD /* pushNewBookViewController.swift */,
+				95A670D91C89973900C3803B /* PhotoPickerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
