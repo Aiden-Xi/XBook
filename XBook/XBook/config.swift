@@ -17,6 +17,10 @@ let kColorWhite = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/25
 let kColorBlack = UIColor(colorLiteralRed: 0/255, green: 0/255, blue: 0/255, alpha: 1)
 let kColorClear = UIColor.clearColor()
 
+func ColorRGB(r:Float, g:Float, b:Float) -> UIColor {
+    return UIColor(colorLiteralRed: r/255, green: g/255, blue: b/255, alpha: 1)
+}
+
 let My_Font = "Bauhaus ITC"
 
 func XXYFont(fontNumber: CGFloat) -> UIFont {
