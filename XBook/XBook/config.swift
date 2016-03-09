@@ -17,14 +17,14 @@ let kColorWhite = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/25
 let kColorBlack = UIColor(colorLiteralRed: 0/255, green: 0/255, blue: 0/255, alpha: 1)
 let kColorClear = UIColor.clearColor()
 
-func ColorRGB(r:Float, g:Float, b:Float) -> UIColor {
+func RGB(r:Float, g:Float, b:Float) -> UIColor {
     return UIColor(colorLiteralRed: r/255, green: g/255, blue: b/255, alpha: 1)
 }
 
-let My_Font = "Bauhaus ITC"
+let MY_FONT = "Bauhaus ITC"
 
 func XXYFont(fontNumber: CGFloat) -> UIFont {
-    return UIFont(name: My_Font, size: fontNumber)!
+    return UIFont(name: MY_FONT, size: fontNumber)!
 }
 
 func printLog<T>(message: T, file: String = __FILE__, method: String = __FUNCTION__, line: Int = __LINE__) {

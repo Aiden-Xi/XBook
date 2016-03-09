@@ -21,7 +21,7 @@ class Push_TitleViewController: UIViewController {
      2.Delegate
      3.通知（NSNotifecation）
      */
-    var callBlock:Push_TitleCallBlock?
+    var callBack:Push_TitleCallBlock?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ class Push_TitleViewController: UIViewController {
     }
     
     func sure() {
-        self.callBlock?(Title: self.textField!.text!)
+        self.callBack?(Title: self.textField!.text!)
         self.dismissViewControllerAnimated(true) { () -> Void in
             
         }
