@@ -276,7 +276,7 @@
      || ([regextestct_17 evaluateWithObject:mobile]== YES)
      ||
      */
-    if (([regextestct_1_ evaluateWithObject:mobile]== YES)){
+    if (([regextestct_1_ evaluateWithObject:mobile] == YES)){
         return YES;
     } else{
         return NO;
