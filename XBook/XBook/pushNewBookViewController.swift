@@ -25,6 +25,11 @@ class pushNewBookViewController: UIViewController,BookTitleDelegate,PhotoPickerD
      */
     var showScore = false
     
+    var type = "文字"
+    var detailType = "文字"
+    
+    var Book_Description = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -135,9 +140,19 @@ class pushNewBookViewController: UIViewController,BookTitleDelegate,PhotoPickerD
         cell.textLabel?.text = self.titleArray[indexPath.row]
         cell.textLabel?.font = XXYFont(15)
         cell.detailTextLabel?.font = XXYFont(13)
-        switch indexPath.row {
+        
+        var row  = indexPath.row
+        
+        if self.showScore && row > 1 {
+            row--
+        }
+        
+        switch row {
         case 0:
             cell.detailTextLabel?.text = self.Book_Title
+            break
+        case 2:
+            cell.detailTextLabel?.text = self.type + "->" + self.detailType
             break
         default:
             break
@@ -151,6 +166,7 @@ class pushNewBookViewController: UIViewController,BookTitleDelegate,PhotoPickerD
         }
         return cell
     }
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView?.deselectRowAtIndexPath(indexPath, animated: true)
         
@@ -192,8 +208,8 @@ class pushNewBookViewController: UIViewController,BookTitleDelegate,PhotoPickerD
         self.presentViewController(vc, animated: true) { () -> Void in
             
         }
-        
     }
+    
     /**
      *  选择评分
      */
@@ -214,8 +230,7 @@ class pushNewBookViewController: UIViewController,BookTitleDelegate,PhotoPickerD
         
         self.tableView?.endUpdates()
         
-    }
-    /**
+    }    /**
      *  选择分类
      */
     func tableViewSelectType(){
@@ -228,6 +243,16 @@ class pushNewBookViewController: UIViewController,BookTitleDelegate,PhotoPickerD
         btn1?.setTitleColor(RGB(38, g: 82, b: 67), forState: .Normal)
         btn2?.setTitleColor(RGB(38, g: 82, b: 67), forState: .Normal)
         
+        vc.type = self.type
+        vc.detailType = self.detailType
+        
+        vc.callBack = ({(type:String, detailType: String) -> Void in
+            self.type = type
+            self.detailType = detailType
+            
+            self.tableView?.reloadData()
+        })
+        
         self.presentViewController(vc, animated: true) { () -> Void in
             
         }
@@ -239,6 +264,12 @@ class pushNewBookViewController: UIViewController,BookTitleDelegate,PhotoPickerD
     func tableViewSelectDescription(){
         let vc = Push_DescriptionViewController()
         GeneralFactory.addTitleWithTitle(vc)
+        vc.textView?.text = self.Book_Description
+        
+        vc.callBack = ({(description: String) -> Void in
+            self.Book_Description = description
+        })
+        
         self.presentViewController(vc, animated: true) { () -> Void in
         }
         

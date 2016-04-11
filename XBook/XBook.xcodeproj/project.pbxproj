@@ -51,6 +51,7 @@
 		F44B5FBA1C8DC8AA00B810BD /* Push_TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B5FB91C8DC8AA00B810BD /* Push_TypeViewController.swift */; };
 		F44B5FBC1C8DC8B900B810BD /* Push_ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B5FBB1C8DC8B900B810BD /* Push_ScoreViewController.swift */; };
 		F44B5FBE1C8DC8C700B810BD /* Push_DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B5FBD1C8DC8C700B810BD /* Push_DescriptionViewController.swift */; };
+		F45476E81C91BA4500B9992C /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F45476E71C91BA4500B9992C /* XKeyBoard.m */; };
 		F47341AE1C905DAF006F08D5 /* AKSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F473419C1C905DAF006F08D5 /* AKSegmentedControl.m */; };
 		F47341AF1C905DAF006F08D5 /* segmented-bg-pressed-center.png in Resources */ = {isa = PBXBuildFile; fileRef = F473419E1C905DAF006F08D5 /* segmented-bg-pressed-center.png */; };
 		F47341B01C905DAF006F08D5 /* segmented-bg-pressed-center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F473419F1C905DAF006F08D5 /* segmented-bg-pressed-center@2x.png */; };
@@ -147,6 +148,8 @@
 		F44B5FB91C8DC8AA00B810BD /* Push_TypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Push_TypeViewController.swift; sourceTree = "<group>"; };
 		F44B5FBB1C8DC8B900B810BD /* Push_ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Push_ScoreViewController.swift; sourceTree = "<group>"; };
 		F44B5FBD1C8DC8C700B810BD /* Push_DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Push_DescriptionViewController.swift; sourceTree = "<group>"; };
+		F45476E61C91BA4500B9992C /* XKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKeyBoard.h; sourceTree = "<group>"; };
+		F45476E71C91BA4500B9992C /* XKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKeyBoard.m; sourceTree = "<group>"; };
 		F473419B1C905DAF006F08D5 /* AKSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKSegmentedControl.h; sourceTree = "<group>"; };
 		F473419C1C905DAF006F08D5 /* AKSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKSegmentedControl.m; sourceTree = "<group>"; };
 		F473419E1C905DAF006F08D5 /* segmented-bg-pressed-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "segmented-bg-pressed-center.png"; sourceTree = "<group>"; };
@@ -205,6 +208,7 @@
 		95A670B21C898BCF00C3803B /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				F45476E51C91BA4500B9992C /* XKeyBoard */,
 				F47341C11C90668C006F08D5 /* IGLDropDownMenu */,
 				F44B5FB31C8C61F100B810BD /* VPImageCropperViewController */,
 				95A670B41C898BEB00C3803B /* JVFloatLabeledTextField */,
@@ -483,6 +487,15 @@
 			path = VPImageCropperViewController;
 			sourceTree = "<group>";
 		};
+		F45476E51C91BA4500B9992C /* XKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F45476E61C91BA4500B9992C /* XKeyBoard.h */,
+				F45476E71C91BA4500B9992C /* XKeyBoard.m */,
+			);
+			path = XKeyBoard;
+			sourceTree = "<group>";
+		};
 		F473419A1C905DAF006F08D5 /* AKSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,6 +726,7 @@
 				F43791601C85F701005DFD14 /* circleViewController.swift in Sources */,
 				F44B5FAF1C88869500B810BD /* pushNewBookViewController.swift in Sources */,
 				F43791531C85F557005DFD14 /* config.swift in Sources */,
+				F45476E81C91BA4500B9992C /* XKeyBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
